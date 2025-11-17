@@ -1,0 +1,199 @@
+/*Estilos básicos store*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    background: #DEB887;
+    justify-content: center;
+    align-items: center;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #DEB887;
+    border-radius: 10px;
+    border: 2px solid #f1f1f1;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #d4a76a;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    max-height: 400px;
+    min-height: 90vh;
+    overflow-y: auto;
+    margin: auto;
+    padding: 30px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    border-radius: 10px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-header {
+    position: relative;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.table-header h1::after {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: #DEB887;
+    /* margin: 0 auto;*/
+    position: absolute;
+    border-radius: 10px;
+    left: 41.4%;
+    transform: translateX(-50%);
+    bottom: 2.2rem;
+}
+
+.table-header p::after {
+    content: '';
+    display: block;
+    width: 10.5rem;
+    height: 0.3rem;
+    background-color: #DEB887;
+    /* margin: auto 14.5rem; */
+    position: absolute;
+    border-radius: 10px;
+    left: 61%;
+    transform: translateX(-50%);
+    bottom: -0.5rem;
+}
+
+.table-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    overflow-y: auto;
+}
+
+img {
+    border-radius: 10px;
+    width: 80px;
+    height: 80px;
+}
+
+img:hover {
+    scale: 1.25;
+    transition: 0.2s;
+}
+
+.new-button button {
+    width: 100%;
+    margin-top: 1rem;
+    border: none;
+    background-color: #DEB887;
+    padding: 12px 40px 12px 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.new-button button:hover {
+    background-color: #d4a76a;
+    transition: 0.2s;
+    scale: 0.98;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    background-color: #f0d2ac9a;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+th, td {
+    border: 1px solid #deb88700;
+}
+
+th {
+    background-color: #eccfa9;
+    text-align: center; 
+    padding: 10px;
+}
+
+td { 
+    padding: 5px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 0.9rem;
+    color: #000000be;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+tr:hover {
+    background-color: #eeeeee75;
+}
+
+.action-buttons button {
+    width: 100%;
+    margin-top: 0.6rem;
+    border: none;
+    padding: 8px 4px 8px 4px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+    transition: 0.3s;
+}
+
+.action-buttons button:hover {
+    scale: 0.98;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.edit-button button {
+    background-color: #d4a466;
+}
+.edit-button button:hover {
+    background-color: #e29e3e;
+}
+
+.delete-button button {
+    background-color: #d48d3b;
+}
+.delete-button button:hover {
+    background-color: #db6f1f;
+}
